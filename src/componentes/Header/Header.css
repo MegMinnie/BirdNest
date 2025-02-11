@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .logo {
-  width: 15%;
+  width: 14%;
 }
 
 .botao-abrir-menu {
@@ -60,4 +60,36 @@ a {
   height: 15%;
   position: relative;
   left: 85%;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 7%;
+  }
+
+  .botao-abrir-menu {
+    width: 5%;
+  }
+
+  .menu {
+    width: 30%;
+    top: 6%;
+    left: 69%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 4%;
+  }
+
+  .botao-abrir-menu {
+    width: 3%;
+  }
+
+  .menu {
+    width: 15%;
+    top: 10%;
+    left: 84%;
+  }
 }

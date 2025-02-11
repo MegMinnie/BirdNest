@@ -12,7 +12,14 @@ body {
 }
 
 footer {
-  background-color: burlywood;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 .apresentacao {
@@ -47,7 +54,7 @@ footer {
   height: 400px;
   display: flex;
   flex-direction: column;
-  gap: 25%;
+  gap: 20%;
 }
 
 .categorias {
@@ -77,4 +84,47 @@ footer {
   justify-content: center;
   gap: 25px;
   padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .apresentacao {
+    gap: 30px;
+  }
+
+  .botao-cadastrar {
+    width: 25%;
+  }
+
+  .categorias {
+    padding: 30px;
+  }
+
+  .capa {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .apresentacao {
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .botao-cadastrar {
+    width: 20%;
+  }
+
+  .categorias {
+    padding: 30px 50px 30px 50px;
+  }
+
+  .capa {
+    padding: 30px 80px 30px 80px;
+  }
+
+  .meusCards {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
 }

@@ -9,6 +9,15 @@ import olhosOcean from "./assets/olhosOcean.jpg";
 import oliver from "./assets/oliver.jpeg";
 import mari from "./assets/mari.png";
 import verdadesOcultas from "./assets/verdadesOcultas.jpg";
+import homemPerfeito from "./assets/homemPerfeito.jpg";
+import fada from "./assets/fada.jpeg";
+import ateFim from "./assets/ateFim.jpg";
+import duende from "./assets/duende.jpeg";
+import mundoKira from "./assets/mundoKira.jpg";
+import andreyGrau from "./assets/andreyGrau.jpeg";
+import VerdadeMissipi from "./assets/VerdadeMissipi.jpg";
+import corvoNegro from "./assets/corvoNegro.jpeg";
+import imgRodape from "./assets/imgRodape .png";
 
 function App() {
   return (
@@ -16,7 +25,7 @@ function App() {
       <div className="cabecalho" style={{ backgroundImage: `url(${corvo})` }}>
         <Header className="header" logo={logo} />
         <section className="apresentacao">
-          <h1>BirdNest</h1>
+          <h1 className="tituloPrincipal">BirdNest</h1>
           <p>
             O BirdNest é um espaço para escrever seu livro, seja no formato de
             Histórias Originais ou de Fanfics, além de permitir acessar outras
@@ -72,26 +81,63 @@ function App() {
             criatividade!
           </p>
         </section>
+        <section className="meusCards">
+          <Cards
+            livro={verdadesOcultas}
+            tituloPrincipal="Verdades Ocultas"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
+            idadeBotao="+16"
+            autor={mari}
+            nomeUsuario="Mari Guerra"
+          />
 
-        <Cards
-          livro={verdadesOcultas}
-          tituloPrincipal="Verdades Ocultas"
-          assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-          idadeBotao="+16"
-          autor={mari}
-          nomeUsuario="Mari Guerra"
-        />
+          <Cards
+            livro={olhosOcean}
+            tituloPrincipal="Olhos de Oceano (Levi Ackerman"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
+            idadeBotao="+16"
+            autor={oliver}
+            nomeUsuario="Mr. Oliver"
+          />
 
-        <Cards
-          livro={olhosOcean}
-          tituloPrincipal="Olhos de Oceano (Levi Ackerman"
-          assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-          idadeBotao="+16"
-          autor={oliver}
-          nomeUsuario="Mr. Oliver"
-        />
+          <Cards
+            livro={homemPerfeito}
+            tituloPrincipal="A procura do Homem Perfeito"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
+            idadeBotao="+16"
+            autor={fada}
+            nomeUsuario="Fada Gótica"
+          />
+
+          <Cards
+            livro={ateFim}
+            tituloPrincipal="Até o fim"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
+            idadeBotao="+16"
+            autor={duende}
+            nomeUsuario="Duende Verde"
+          />
+
+          <Cards
+            livro={mundoKira}
+            tituloPrincipal="O mundo de Kira (Death note)"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
+            idadeBotao="+16"
+            autor={andreyGrau}
+            nomeUsuario="Andrey do Grau"
+          />
+
+          <Cards
+            livro={VerdadeMissipi}
+            tituloPrincipal="A verdade Sobre Missisipi"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
+            idadeBotao="+16"
+            autor={corvoNegro}
+            nomeUsuario="Corvo Negro"
+          />
+        </section>
       </main>
-      <Footer />
+      <Footer className="rodape" imgRodape={imgRodape} />
     </>
   );
 }

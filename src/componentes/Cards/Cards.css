@@ -50,6 +50,10 @@
   margin-top: 8px;
 }
 
+.nomeUsuario {
+  font-size: 12px;
+}
+
 ul,
 li {
   list-style-type: none;
@@ -84,4 +88,39 @@ li {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .fanfic {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .livro {
+    padding: 0px;
+    height: 300px;
+  }
+
+  .quadro {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .assunto {
+    height: 14svh;
+  }
+
+  .icones {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quadro {
+    width: 200%;
+  }
+
+  .assunto {
+    height: 30svh;
+  }
 }

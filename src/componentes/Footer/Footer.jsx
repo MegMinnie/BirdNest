@@ -1,12 +1,11 @@
 import "./Footer.css";
 
-function Footer() {
+function Footer({ imgRodape }) {
   return (
-    <>
-      <footer className="rodape">
-        <p>aaaaaaaaaa</p>
-      </footer>
-    </>
+    <footer className="rodape">
+      <img className="imgRodape" src={imgRodape} alt="Logo do rodape" />
+      <p className="texto-rodape">&copy; Copyright BirdNest - 2023 </p>
+    </footer>
   );
 }
 

@@ -23,11 +23,9 @@ function Cards({
               <button className="idadeBotao">{idadeBotao}</button>
               {}
               <ul>
-                {["ANIME", "ROMANCE", "SHINGEKI NO KYOJIN", "FANTASIA"].map(
-                  (tag, index) => (
-                    <li key={index}>{tag}</li>
-                  )
-                )}
+                {["ANIME", "ROMANCE", "FANTASIA"].map((tag, index) => (
+                  <li key={index}>{tag}</li>
+                ))}
               </ul>
             </div>
 
