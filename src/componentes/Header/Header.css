@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.logo {
+  width: 15%;
+}
+
+.botao-abrir-menu {
+  border: none;
+  width: 10%;
+  height: auto;
+}
+
+.bi-list {
+  font-size: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  border: 1px solid rgb(161, 137, 137);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 13%;
+  left: 48%;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid rgb(63, 62, 62);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bi-x {
+  font-size: 22px;
+}
+
+.botao-fechar-menu {
+  border: none;
+  width: 15%;
+  height: 15%;
+  position: relative;
+  left: 85%;
+}
