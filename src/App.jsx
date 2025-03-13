@@ -5,18 +5,18 @@ import Footer from "./componentes/Footer/Footer";
 import logo from "./assets/logo.webp";
 import corvo from "./assets/corvo.jpg";
 import tela from "./assets/tela.jpg";
-import olhosOcean from "./assets/olhosOcean.jpg";
-import oliver from "./assets/oliver.jpeg";
-import mari from "./assets/mari.png";
-import verdadesOcultas from "./assets/verdadesOcultas.jpg";
-import homemPerfeito from "./assets/homemPerfeito.jpg";
-import fada from "./assets/fada.jpeg";
-import ateFim from "./assets/ateFim.jpg";
-import duende from "./assets/duende.jpeg";
-import mundoKira from "./assets/mundoKira.jpg";
-import andreyGrau from "./assets/andreyGrau.jpeg";
-import VerdadeMissipi from "./assets/VerdadeMissipi.jpg";
-import corvoNegro from "./assets/corvoNegro.jpeg";
+import livro2 from "./assets/olhosOcean.jpg";
+import usuario2 from "./assets/oliver.jpeg";
+import usuario1 from "./assets/mari.png";
+import livro1 from "./assets/verdadesOcultas.jpg";
+import livro3 from "./assets/homemPerfeito.jpg";
+import usuario3 from "./assets/fada.jpeg";
+import livro4 from "./assets/ateFim.jpg";
+import usuario4 from "./assets/duende.jpeg";
+import livro5 from "./assets/mundoKira.jpg";
+import usuario5 from "./assets/andreyGrau.jpeg";
+import livro6 from "./assets/VerdadeMissipi.jpg";
+import usuario6 from "./assets/corvoNegro.jpeg";
 import imgRodape from "./assets/imgRodape .png";
 
 function App() {
@@ -83,56 +83,72 @@ function App() {
         </section>
         <section className="meusCards">
           <Cards
-            livro={verdadesOcultas}
+            livro={livro1}
             tituloPrincipal="Verdades Ocultas"
-            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-            idadeBotao="+16"
-            autor={mari}
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged. At vero eos et accusamus."
+            idadeBotao="16+"
+            tags={["SUSPENSE", "HISTÓRIAS ORIGINAIS", "MISTÉRIO", "TERROR"]}
+            autor={usuario1}
             nomeUsuario="Mari Guerra"
           />
 
           <Cards
-            livro={olhosOcean}
-            tituloPrincipal="Olhos de Oceano (Levi Ackerman"
-            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-            idadeBotao="+16"
-            autor={oliver}
+            livro={livro2}
+            tituloPrincipal="Olhos de Oceano (Levi Ackerman)"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged. At vero eos et accusamus."
+            idadeBotao="12+"
+            tags={["ROMANCE", "FANTASIA", "ATTACK ON TITAN", "ANIME"]}
+            autor={usuario2}
             nomeUsuario="Mr. Oliver"
           />
 
           <Cards
-            livro={homemPerfeito}
+            livro={livro3}
             tituloPrincipal="A procura do Homem Perfeito"
-            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-            idadeBotao="+16"
-            autor={fada}
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged. At vero eos et accusamus."
+            idadeBotao="18+"
+            tags={[
+              "SUSPENSE",
+              "FICÇÃO POLICIAL",
+              "MISTÉRIO",
+              "HISTÓRIAS ORIGINAIS",
+            ]}
+            autor={usuario3}
             nomeUsuario="Fada Gótica"
           />
 
           <Cards
-            livro={ateFim}
+            livro={livro4}
             tituloPrincipal="Até o fim"
-            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-            idadeBotao="+16"
-            autor={duende}
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged. At vero eos et accusamus."
+            idadeBotao="10+"
+            tags={[
+              "FANTASIA",
+              "ROMANCE",
+              "HISTÓRIAS ORIGINAIS",
+              "FOLCLORE JAPONÊS",
+            ]}
+            autor={usuario4}
             nomeUsuario="Duende Verde"
           />
 
           <Cards
-            livro={mundoKira}
+            livro={livro5}
             tituloPrincipal="O mundo de Kira (Death note)"
-            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-            idadeBotao="+16"
-            autor={andreyGrau}
-            nomeUsuario="Andrey do Grau"
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged. At vero eos et accusamus."
+            idadeBotao="12+"
+            tags={["ANIME", "FICÇÃO", "DEATH NOTE", "SUSPENSE"]}
+            autor={usuario5}
+            nomeUsuario="Andrey do grau"
           />
 
           <Cards
-            livro={VerdadeMissipi}
+            livro={livro6}
             tituloPrincipal="A verdade Sobre Missisipi"
-            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining e unchanged.At vero eos et accusamus um deleniti atque."
-            idadeBotao="+16"
-            autor={corvoNegro}
+            assunto="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining unchanged. At vero eos et accusamus."
+            idadeBotao="16+"
+            tags={["SUSPENSE", "TERROR", "MISTÉRIO", "HISTÓRIAS ORIGINAIS"]}
+            autor={usuario6}
             nomeUsuario="Corvo Negro"
           />
         </section>
