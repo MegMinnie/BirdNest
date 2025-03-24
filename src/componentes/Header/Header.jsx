@@ -1,52 +1,66 @@
 import "./Header.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Header({ logo }) {
-  const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
 
-  return (
-    <>
-      <header className="header">
-        <img className="logo" src={logo} alt="Logo" />
-        <button onClick={() => setOpen(true)} className="botao-abrir-menu">
-          <i class="bi bi-list"></i>
-        </button>
+    const toSobre = () => {
+        navigate("/sobre");
+    };
 
-        {open && (
-          <div className="menu">
-            <div className="container">
-              <nav className="teste">
-                <a href="#" className="">
-                  Home
-                </a>
-                <a href="#" className="">
-                  Sobre
-                </a>
+    const toLogin = () => {
+        navigate("/login");
+    };
 
-                <a href="#" className="">
-                  Contato
-                </a>
+    const toCadastro = () => {
+        navigate("/cadastre-se");
+    };
+    return (
+        <>
+            <header className="header">
+                <img className="logo" src={logo} alt="Logo" />
+                <button
+                    onClick={() => setOpen(true)}
+                    className="botao-abrir-menu"
+                >
+                    <i className="bi bi-list"></i> {}
+                </button>
 
-                <a href="#" className="">
-                  Faça seu Login
-                </a>
+                {open && (
+                    <div className="menu">
+                        <div className="container">
+                            <nav className="teste">
+                                <a href="#" className="">
+                                    Home
+                                </a>
+                                <a onClick={toSobre} className="">
+                                    {" "}
+                                    {}
+                                    Sobre
+                                </a>
 
-                <a href="#" className="">
-                  Cadastre-se
-                </a>
-              </nav>
-              <button
-                onClick={() => setOpen(false)}
-                className="botao-fechar-menu"
-              >
-                <i class="bi bi-x"></i>
-              </button>
-            </div>
-          </div>
-        )}
-      </header>
-    </>
-  );
+                                <a onClick={toLogin} className="">
+                                    Faça seu Login
+                                </a>
+
+                                <a onClick={toCadastro} className="">
+                                    Cadastre-se
+                                </a>
+                            </nav>
+                            <button
+                                onClick={() => setOpen(false)}
+                                className="botao-fechar-menu"
+                            >
+                                <i className="bi bi-x"></i> {}
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </header>
+        </>
+    );
 }
 
 export default Header;
