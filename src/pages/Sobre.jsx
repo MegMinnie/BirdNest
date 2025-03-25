@@ -1,10 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import Header from "../componentes/Header/Header";
 import logo from "../assets/logo.webp";
 
 const Sobre = () => {
-    const navigate = useNavigate();
-
     return (
         <div>
             <Header className="header" logo={logo} /> {}

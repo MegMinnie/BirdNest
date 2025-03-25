@@ -17,7 +17,6 @@ import usuario5 from "../assets/andreyGrau.jpeg";
 import livro6 from "../assets/VerdadeMissipi.jpg";
 import usuario6 from "../assets/corvoNegro.jpeg";
 import imgRodape from "../assets/imgRodape .png";
-import { useNavigate } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 
 const Inicial = () => {
@@ -103,8 +102,6 @@ const Inicial = () => {
             nomeUsuario: "Corvo Negro",
         },
     ];
-
-    const navigate = useNavigate();
 
     return (
         <>

@@ -1,7 +1,7 @@
 import "./Header.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import PropTypes from "prop-types";
 function Header({ logo }) {
     const [open, setOpen] = useState(false);
     const navigate = useNavigate();
@@ -25,7 +25,7 @@ function Header({ logo }) {
                     onClick={() => setOpen(true)}
                     className="botao-abrir-menu"
                 >
-                    <i className="bi bi-list"></i> {}
+                    <i className="bi bi-list"></i>
                 </button>
 
                 {open && (
@@ -63,4 +63,7 @@ function Header({ logo }) {
     );
 }
 
+Header.propTypes = {
+    logo: PropTypes.string.isRequired,
+};
 export default Header;
